@@ -35,7 +35,7 @@ def test_back_to_level_two_truncates_path(doc_2, config):
     assert len(deeper[0].heading_path) == 3
 
 
-def test_heading_level_jump_does_not_insert_placeholders(doc_2, config):
+def test_heading_level_jump_does_not_insert_empty_strings(doc_2, config):
     """一级标题后直接跳三级标题，路径长度 2，不补空串。"""
     chunks = chunk(doc_2, config)
     jumped = [c for c in chunks if c.heading_path == ["交通指引", "地铁接驳"]]
@@ -90,4 +90,3 @@ def test_prefix_heading_can_be_disabled_in_config(doc_3):
     chunks = chunk(doc_3, cfg)
     for item in chunks:
         assert item.vector_text() == item.text
-
