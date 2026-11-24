@@ -146,6 +146,14 @@ python -m pytest -v
 - 跨页段落 `page_from=3`、`page_to=4`；跨三页段落切成 3 片，区间为 3–4、3–5、4–5；
 - 同一小节内相邻切片重叠固定 50 字，`overlap_ok` 校验 7/7 组成立。
 
+实测日志（提交在仓库 `logs/` 目录）：
+
+| 文件 | 内容 | 结论行 |
+| --- | --- | --- |
+| `logs/pytest-3.12.txt` | Python 3.12.10 下 `pytest -v` 全量输出 | `33 passed in 0.08s` |
+| `logs/pytest-3.11.txt` | Python 3.11.9 下 `pytest -v` 全量输出 | `33 passed in 0.08s` |
+| `logs/chunk_stats.txt` | `scripts/chunk_stats.py` 输出 | 三份样例 16 / 7 / 7 片 |
+
 ## 9. 与投标提案的差异
 
 以工单验收原文为准，实现与提案的差别如下：
