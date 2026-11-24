@@ -1,0 +1,13 @@
+[project]
+name = "clawhunt-1915-doc-chunker"
+version = "1.0.0"
+description = "按标题结构的文档切片器：标题 → 段落 → 句子，带重叠、页码与表格表头重复"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
