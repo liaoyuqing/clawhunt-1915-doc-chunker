@@ -150,8 +150,8 @@ python -m pytest -v
 
 | 文件 | 内容 | 结论行 |
 | --- | --- | --- |
-| `logs/pytest-3.12.txt` | Python 3.12.10 下 `pytest -v` 全量输出 | `33 passed in 0.08s` |
-| `logs/pytest-3.11.txt` | Python 3.11.9 下 `pytest -v` 全量输出 | `33 passed in 0.08s` |
+| `logs/pytest-3.12.txt` | Python 3.12.10 下 `pytest -v` 全量输出 | `33 passed in 0.09s` |
+| `logs/pytest-3.11.txt` | Python 3.11.9 下 `pytest -v` 全量输出 | `33 passed in 0.10s` |
 | `logs/chunk_stats.txt` | `scripts/chunk_stats.py` 输出 | 三份样例 16 / 7 / 7 片 |
 
 ## 9. 与投标提案的差异
